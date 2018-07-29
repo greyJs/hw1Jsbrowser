@@ -10,12 +10,12 @@ let slider = document.getElementById('slider');
 slider.src = image[0];
 let step = 0;
 setInterval(() => {
-    if(step > image.length){
+    step++;
+    if(step >= image.length){
         step = 0;
     };
     slider.src = image[step];
-    step++
-},5000);
+    },5000);
 
 
 
